@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- all of the metadatas -->
+      <meta name="viewport" content="width=device-width">
+      <meta name="description" content="grandswager Files">
+      <meta name="keywords" content="grandswager Files">
+      <meta property="og:type" content="website">
+      <meta property="og:title" content="grandswager File Sharing">
+      <meta property="og:url" content="https://filesharing.grandswager.repl.co/">
+      <meta property="og:site_name" content="grandswager File Sharing">
+      <meta property="og:description" content="Share your files securely in a instant.">
+      <meta property="og:locale" content="en">
+      <meta name="twitter:card" content="summary">
+      <meta name="twitter:title" content="grandswager Files">
+      <meta name="twitter:description" content="Share your files securely in a instant.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>grandswager File Sharing | Share your files securely in a instant.</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="app">
+      <div class="screen join-screen active">
+        <div class="form">
+          <h2>grandswager File Sharing | Share your files securely in a instant.</h2>
+          <div class="form-input">
+            <label for="join-id"><b>Join Id</b></label>
+            <input type="text" id="join-id" placeholder="123-456-789">
+            <h7 class="link">Don't have one?</h7> <a href="/">Click Here to Create One</a>
+          </div>
+          <div class="form-input">
+            <button id="receiver-start-con-btn">Connect</button>
+          </div>
+        </div>
+      </div>
+      <div class="screen fs-screen">
+        <div class="files-list">
+          <div class="title">Shared Files:</div>
+          <div class="item">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.1/download.min.js"></script>
+    <script type="text/javascript" src="socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="receiver.js"></script>
+  </body>
+</html>

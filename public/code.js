@@ -12,7 +12,7 @@
 		document.querySelector("#join-id").innerHTML = `
 			<b>Room ID</b>
 			<span id="id-to-join">${joinID}</span>
-      <br><br>Searching for connection...
+      <br><br><i class="fa-solid fa-spinner"></i>&nbsp;&nbsp;Connecting...
 		`;
 		socket.emit("sender-join", {
 			uid:joinID

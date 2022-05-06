@@ -212,6 +212,16 @@ a {
 	font-weight: 600;
 }
 
-button:active {
-  animation:push .2s ease-in-out;
+.main-page .section-a h2:nth-of-type(2)::after {
+  content:"Create your room today!";
+  background:linear-gradient(to right, #da4453, #89216b);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.main-page .section-a h2:nth-of-type(3)::after {
+  content:"Share your files securely in an instant.";
+   background: linear-gradient(to right, #283c86, #45a247);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
 }

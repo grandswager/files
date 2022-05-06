@@ -58,9 +58,5 @@
 			});
 		}
 	});
-
-  if (window.location.href = "https://filesharing.grandswager.repl.co/receiver.html/?join=") {
-    
-  }
   
 })();

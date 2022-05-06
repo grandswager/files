@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@60,700&family=Dosis:wght@400;700&display=swap");
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body {
+	background: #f5f5f5;
+	font-family: "Dosis", sans-serif;
+}
+.screen {
+	display: none;
+}
+.screen.active {
+	display: block;
+}
+
+.join-screen .form {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	padding: 50px;
+}
+.join-screen .form .form-input {
+	margin: 10px 0px;
+}
+.join-screen .form h2 {
+	font-size: 40px;
+	margin-bottom: 20px;
+	line-height:45px;
+	font-family: "Anybody",sans-serif;
+  white-space:pre;
+}
+
+.join-screen .form h2:nth-of-type(1)::after {
+  content:"\a Create your room today!";
+  background:linear-gradient(to right, #da4453, #89216b);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.join-screen .form h2:nth-of-type(2)::after {
+  content:"Share your files securely in a instant.";
+   background: linear-gradient(to right, #283c86, #45a247);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.join-screen .form button {
+	background: #111;
+  font-family: "Dosis", Arial, sans-serif;
+	color: #fff;
+  border-radius:20px;
+	padding: 10px 20px;
+	border: none;
+	outline: none;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.join-screen .form button:active {
+  animation:push .2s ease-in-out;
+}
+
+.join-screen .form #join-id b {
+	color: #222;
+	display: block;
+	margin-top: 20px;
+}
+.join-screen .form #join-id span {
+	display: inline-block;
+	font-size: 25px;
+	font-family: monospace;
+	color: #111;
+	padding: 10px;
+	border: 1px solid #111;
+	margin-top: 5px;
+}
+input[type="text"] {
+  font-family: monospace;
+}
+.join-screen .form .form-input label {
+	color: #222;
+	font-size: 18px;
+}
+.join-screen .form .form-input input {
+	display: block;
+	margin:10px 0px;
+	width: 100%;
+	max-width: 200px;
+	border: 1px solid #111;
+	color: #111;
+	font-size: 20px;
+	padding: 10px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.fs-screen {
+	padding: 20px;
+}
+.fs-screen .file-input {
+	width: 100%;
+	border: 2px dashed #555;
+}
+.fs-screen .file-input label {
+	display: block;
+	width: 100%;
+	padding: 40px 50px;
+	text-align: center;
+	color: #111;
+	font-size: 18px;
+}
+.fs-screen .file-input input {
+	display: none;
+}
+.fs-screen .files-list {
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+.fs-screen .files-list .title {
+	width: 100%;
+	margin: 20px 0px;
+}
+.fs-screen .files-list .item {
+	width: 33%;
+	min-width: 200px;
+	border: 1px solid #eee;
+	box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.05);
+}
+.fs-screen .files-list .item .progress {
+	padding: 30px;
+	text-align: center;
+	font-size: 50px;
+	color: #222;
+	font-family: "Poppins";
+}
+.fs-screen .files-list .item .filename {
+	padding: 5px;
+	font-size: 18px;
+	border-top: 1px solid #eee;
+}
+
+.link {
+  color: #999;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff
+}
+
+@keyframes push {
+  0% {transform:translatey(0px)}
+  50% {transform:translatey(5px)}
+  100% {transform:translatey(0px)}
+}

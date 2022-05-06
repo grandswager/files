@@ -1,3 +1,5 @@
+/* Basic CSS Theme is Copyrighted 2022 by grandswager (author of this website). All rights reserved. Used with permission directly with permission from author. */
+
 * {
 	margin: 0px;
 	padding: 0px;
@@ -29,6 +31,14 @@ body {
 	line-height:45px;
 	font-family: "Poppins",sans-serif;
 }
+
+.join-screen .form h2:nth-of-type(2)::after {
+  content:"Share your files securely in an instant.";
+   background: black;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
 .join-screen .form button {
 	background: #111;
 	color: #fff;

@@ -11,7 +11,8 @@
 		let joinID = generateID();
 		document.querySelector("#join-id").innerHTML = `
 			<b>Room ID</b>
-			<span>${joinID}</span>
+			<span id="id-to-join">${joinID}</span>
+      <br><br>Searching for connection...
 		`;
 		socket.emit("sender-join", {
 			uid:joinID
@@ -43,7 +44,7 @@
 			shareFile({
 				filename: file.name,
 				total_buffer_size:buffer.length,
-				buffer_size:2048
+				buffer_size:4096
 			}, buffer, el.querySelector(".progress"));
 		}
 		reader.readAsArrayBuffer(file);
